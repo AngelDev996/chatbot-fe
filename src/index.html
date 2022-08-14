@@ -3,12 +3,96 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   <link href="/dist/output.css" rel="stylesheet">
     <title>BanHN</title>
 </head>
-<body>
-  <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
+<body class="font-Poppins">
+  <header>
+    <nav class="container mx-auto flex items-start py-1 mt-4 sm:mt-12">
+      <div class="cursor-pointer py-1">  <img src="./images/a90d84e54d91418e988d1085249eac79.png" alt=""> </div>
+      <ul class="hidden sm:flex flex-1 justify-end items-center gap-12 text-bookmark-blue uppercase" >
+        <li class="cursor-pointer hover:underline " >Inicio</li>
+        <li class="cursor-pointer hover:underline " >Acerca</li>
+        <li class="cursor-pointer hover:underline  " >Contactos</li>
+        <button type="button" class="bg-red-500 text-white rounded-md px-7 py-3 uppercase dark:md:hover:bg-pink-600">Iniciar sesion </button>
+
+      </ul>
+      <div class="flex sm:hidden flex-1 justify-end ">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </nav>
+  </header>
+  <!--Hero-->
+  
+    <div class="container">
+      <h1 class="text-3xl text-center">
+        Bienvenidos al chatbot
+      </h1>
+      <div class=" flex items-center justify-center"> 
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+      </div>
+
+      <h1 class="text-2xl text-center" >Como podemos ayudarte?</h1>
+
+    </div>
+    <div class="container text-center font-Poppins" >
+  
+      <h1 class=" py-4 text-green-600 text-2xl font-bold">Chatbot</h1>
+  
+      <h1 class="py-1">Preguntale a nuestro chatbot: </h1>
+      <h1 class="py-1">Tarjetas de credito</h1>
+      <h1 class="py-1">Estados de cuenta</h1>
+      <h1 class="py-1 pb-6">Consultas de banca en linea</h1>
+      <button class="uppercase text-white font-bold bg-green-600 rounded-md px-7 py-3 dark:md:hover:bg-green-800">Preguntar</button>
+
+    </div>
+
+
+
+
+  <div class="container">
+
+    <div class="chatbox">
+        <div class="chatbox__support">
+            <div class="chatbox__header">
+                <div class="chatbox__image--header">
+                    <img src="https://img.icons8.com/color/48/000000/circled-user-female-skin-type-5--v1.png" alt="image">
+                </div>
+                <div class="chatbox__content--header">
+                    <h4 class="chatbox__heading--header">Asistente Vitual</h4>
+                    <p class="chatbox__description--header">Hola, soy el asistente virtual de BanHN ¿En que podria ayudarte?</p>
+                </div>
+            </div>
+            <div class="chatbox__messages">
+                <div></div>
+            </div>
+            <div class="chatbox__footer">
+                <input type="text" placeholder="Escriba un mensaje...">
+                <button class="chatbox__send--footer send__button">Enviar</button>
+            </div>
+        </div>
+        <div class="chatbox__button">
+            <button><img src="./images/chatbox-icon.svg" /></button>
+        </div>
+    </div>
+</div>
+
+  <script src="./script.js"></script>
+<script src="./app.js"></script>
+
+    
+
+
 </body>
 </html>
+
+
