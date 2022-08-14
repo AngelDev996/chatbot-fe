@@ -1,4 +1,4 @@
-# Proyecto de la clase Teoria de la simulacion.
+# Proyecto de la clase Teoría de la simulación.
 ## Chatbot para consulta de servicios financieros
 
 ![](https://github.com/AngelDev996/chatbot-fe/blob/master/20220814_131058.gif)
@@ -7,10 +7,11 @@
 
 ## Deployment
 
-En esta iteracion del proyecto aun no se ha añadido el backend, asi que no es necesario instalar dependencias o librerias para visualizar el frontend.
+En esta iteración del proyecto aún no se ha añadido el backend, así que no es necesario instalar dependencias o librerías para visualizar el frontend.
 
-## Visualizacion del FrontEnd
-Para visualizar la interfaz grafica, abrir el archivo index.hmtl, se recomienda hacer uso de la extension "Live Server" de Visual Studio Code.
+## Visualización del FrontEnd
+Para visualizar la interfaz gráfica, abrir el archivo index.html, se recomienda hacer uso de la extensión "Live Server" de Visual Studio Code.
 
-## Tecnologias usadas
-En esta primera iteracion se han usado tecnologias web (HTML, CSS, Javascript) y un framework para estilos de CSS (TailWinds)
+## Tecnologías usadas
+En esta primera iteración se han usado tecnologías web (HTML, CSS, Javascript) y un framework para estilos de CSS (TailWinds)
+
