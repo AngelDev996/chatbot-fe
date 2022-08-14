@@ -5,7 +5,7 @@
 
 
 
-## Deployement
+## Deployment
 
 En esta iteracion del proyecto aun no se ha añadido el backend, asi que no es necesario instalar dependencias o librerias para visualizar el frontend.
 
