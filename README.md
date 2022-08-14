@@ -1,2 +1,3 @@
 # chatbot-fe
-https://media.giphy.com/media/zssuFgtUInA45MAQpL/giphy.gif
+
+![]https://github.com/AngelDev996/chatbot-fe/blob/master/20220814_131058.gif
