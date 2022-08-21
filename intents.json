@@ -1,0 +1,84 @@
+{"intents": [
+
+
+
+  {
+    "tag": "saludo",
+      "patterns":["hola", "un saludo", "hi", "saludos", "buen dia","buenas tardes", "buenas noches", "buenas", "hello"],
+      "responses": ["Hola, bienvenido al asisitente virtual de Ban HN"]
+  },
+  {
+    "tag": "despedida",
+      "patterns": ["bye", "adios", "hasta luego", "hasta pronto","eso es todo lo que queria saber", "ya no necesito ayuda","gracias"],
+      "responses": ["Espero haber sido de mucha ayuda"]
+  },
+  {
+    "tag": "usuario",
+      "patterns": ["nombre de usuario", "usuario cuenta", "perdi mi usuario"],
+      "responses": ["Para lograr saber cual es su usuario por favor siga los siguientes pasos: \n1. Ingrese a la página de recuperación de usuario\n2. Digite sus datos de tarjeta de débito o crédito \n3. Digite el correo electrónico con el que usted se registró en Banca en Línea \n4. Presione la opción Confirmar \n5. Al haber completado los pasos, recibirá un código de confirmación a su correo electrónico asociado a su cuenta  \n6. Copie el código de confirmación y péguelo en la pantalla de recuperación de usuario, y a continuación presione Confirmar \n7. Su nombre de usuario aparecerá en pantalla"]
+  },
+
+  {
+    "tag": "bloqueo",
+      "patterns": ["desbloqueo", "desbloquear cuenta"],
+      "responses": ["Para lograr desbloquear un usuario por favor siga los siguientes pasos\n 1. Ingrese a Banca Móvil y seleccione la opción ¿Olvidó su usuario o contraseña? \n 2. En la página para restablecer la contraseña siga los pasos y complete la información que se le pide en pantalla:\n 3. Nombre de usuario \n 4. Número de tarjeta de crédito o débito \n 5. Correo electrónico asociado a Banca Móvil \n 6. Pin de seguridad\n "]
+  },
+
+
+  {
+    "tag": "contraseña",
+      "patterns": ["contra", "contraseña", "recuperar contraseña"],
+      "responses": [" Por seguridad en el proceso de recuperación de contraseña es requerido que disponga de la siguiente información.\n 1. Nombre de usuario \n 2. Número de tarjeta de crédito o débito \n 3. Código BAC generado por la funcionalidad de pin de seguridad en Banca Móvil\n 4. Correo electrónico asociado a Banca en Línea  "]
+  },
+
+  {
+  "tag": "huellas",
+    "patterns": ["huella", "no me reconoce la huella", "problemas con la huella"],
+    "responses": ["¿Problemas con el reconocimiento de huella y/o cara?\n Puedes seguir estos pasos\n 1. Presione el ícono de huella en la pantalla de inicio\n 2. Espere a que aparezca el pop-up Aviso de inicio\n 3. Coloque su dedo en el sensor del dispositivo o muestre su cara en el sensor de reconocimiento facial del dispositivo, en caso que ingrese por Face ID"]
+  },
+
+
+  {
+
+      "tag": "monto",
+        "patterns":["monto", "saldo disponible", "saldo actual", "dinero de mi cuenta"],
+        "responses": ["En breve un agente se comunicara con usted para brindarle la informacion."]
+
+  },
+
+  {
+
+    "tag": "prestamo",
+      "patterns":["prestamo, solicitud prestamo"],
+      "responses": ["Si desea realizar el pago de aun prestamo, por favor siga los siguientes pasos:\n 1. Ingrese a Banca en Línea con su usuario y contraseña \n 2. En el menú lateral izquierdo, seleccione Pagar y luego Préstamos o leasing  \n 3. Seleccione el préstamo que desea pagar en Operación destino  \n 4. Elija el tipo de pago que desea hacer: pagar la cuota pendiente, el saldo total o hacer un pago extraordinario (en caso de que aplique)  \n 5. Escoja la cuenta con la que desea pagar el préstamo\n 6. Confirme el detalle del pago y haga clic en Aplicar"]
+
+},
+{
+
+  "tag": "agente-humano",
+    "patterns":["agente real", "oficial de servicio"],
+    "responses": ["Si desea realizar el pago de aun prestamo, por favor siga los siguientes pasos:\n 1. Ingrese a Banca en Línea con su usuario y contraseña \n 2. En el menú lateral izquierdo, seleccione Pagar y luego Préstamos o leasing  \n 3. Seleccione el préstamo que desea pagar en Operación destino  \n 4. Elija el tipo de pago que desea hacer: pagar la cuota pendiente, el saldo total o hacer un pago extraordinario (en caso de que aplique)  \n 5. Escoja la cuenta con la que desea pagar el préstamo\n 6. Confirme el detalle del pago y haga clic en Aplicar"]
+
+},
+
+{
+
+  "tag": "pagos-automaticos",
+    "patterns":["pagos automaticos"],
+    "responses": ["Si desea realizar pagos automaticos por favor realice los siguientes pasos:\n 1. Ingrese a Banca en Línea con su usuario y contraseña\n 2. En el menú lateral, seleccione la opción Realizar gestiones y luego Tarjetas de crédito \n 3.presione Incluir pagos automáticos\n 4. Escoja la Tarjeta en la que va a realizar los cargos automáticos, el Servicio o cargo a incluir y si aplica para el cargo que está registrando, la Referencia\n 5.Diligencie la información de su teléfono celular para recibir una notificación e informarle acerca del estado de su solicitud. Si requiere modificar su correo electrónico, ingrese a Configurar y luego Mi perfil en el menú lateral principal \n 6.Presione el botón Enviar para incluir su cargo automático."]
+},
+
+{
+
+  "tag": "cambio-de-pin",
+    "patterns":["cambio de pin", "cambio pin"],
+    "responses": ["Si desea cambiar el pin de tarjeta de credito o el pin ATM, por favor siga los sigueintes pasos:\n 1. Ingrese a Banca en Línea con su usuario y contraseña\n 2. En el menú principal lateral, seleccione Realizar gestiones y luego escoja las opciones de Tarjeta de crédito o Tarjeta de débito según corresponda \n 3. Haga clic en Solicitar la clave o PIN del cajero automático\n 4. Digite el número de la tarjeta de crédito o débito de la que desea obtener el PIN y presione el botón Aceptar\n 5. Automáticamente el sistema generará un código de verificación a través de la funcionalidad de pin de seguridad en Banca Móvil. Realice lo siguiente:\n   -Ingrese a Banca Móvil, haga clic en el menú Swipe y luego en la opción Código BAC  \n   -Digite la clave de acceso a Código BAC y el sistema generará un código de verificación\n   -Regrese a Banca en Línea y escriba este código en el momento en que el sistema se lo solicite. Si aún no ha realizado la activación de pin de seguridad en Banca Móvil, consulte nuestra guía\n  Una vez haya consultado su número de PIN en Banca en Línea o Banca Móvil, le recomendamos cambiar su PIN por uno personalizado en cualquier ATM ."]
+
+}
+
+]
+}
+
+
+
+
