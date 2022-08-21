@@ -1,27 +1,22 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-  <link href="/dist/output.css" rel="stylesheet">
-    <title>BanHN</title>
+    <meta charset="UTF-8">
+    <title>Ban HN</title>
 </head>
-<body class="font-Poppins">
+<body>
+
   <header>
     <nav class="container mx-auto flex items-start py-1 mt-4 sm:mt-12">
-      <div class="cursor-pointer py-1">  <img src="./images/a90d84e54d91418e988d1085249eac79.png" alt=""> </div>
+      <div class="cursor-pointer py-1"> <img src="{{user_image}}" alt="User Image" />
+ </div>
       <ul class="hidden sm:flex flex-1 justify-end items-center gap-12 text-bookmark-blue uppercase" >
         <li class="cursor-pointer hover:underline " >Inicio</li>
         <li class="cursor-pointer hover:underline " >Acerca</li>
         <li class="cursor-pointer hover:underline  " >Contactos</li>
-        <button type="button" class="bg-red-500 text-white rounded-md px-7 py-3 uppercase dark:md:hover:bg-pink-600">Iniciar sesion </button>
+        <button type="button" class="button3 text-black rounded-md px-7 py-3 uppercase dark:md:hover:bg-pink-600">Iniciar sesion </button>
 
       </ul>
       <div class="flex sm:hidden flex-1 justify-end ">
@@ -29,23 +24,22 @@
       </div>
     </nav>
   </header>
-  <!--Hero-->
-  
-    <div class="container">
+
+      <div class="container">
       <h1 class="text-3xl text-center">
         Bienvenidos al chatbot
       </h1>
-      <div class=" flex items-center justify-center"> 
-        <img  src="/src/images/depositphotos_176577880-stock-illustration-cute-smiling-funny-robot-chat.jpg" width="100" height="100" alt="">
+      <div class=" flex items-center justify-center">
+        <img src="{{ user_image2}}" alt="User Image" height="100px" width="100px" />
       </div>
 
       <h1 class="text-2xl text-center" >Como podemos ayudarte?</h1>
 
     </div>
-    <div class="container text-center font-Poppins" >
-  
+   <div class="container text-center font-Poppins" >
+
       <h1 class=" py-4 text-green-600 text-2xl font-bold">Chatbot</h1>
-  
+
       <h1 class="py-1">Preguntale a nuestro chatbot: </h1>
       <h1 class="py-1">Tarjetas de credito</h1>
       <h1 class="py-1">Estados de cuenta</h1>
@@ -56,9 +50,11 @@
 
 
 
+    
 
-  <div class="container">
 
+
+<div class="container">
     <div class="chatbox">
         <div class="chatbox__support">
             <div class="chatbox__header">
@@ -66,7 +62,7 @@
                     <img src="https://img.icons8.com/color/48/000000/circled-user-female-skin-type-5--v1.png" alt="image">
                 </div>
                 <div class="chatbox__content--header">
-                    <h4 class="chatbox__heading--header">Asistente Vitual</h4>
+                    <h4 class="chatbox__heading--header">Asistente Virtual</h4>
                     <p class="chatbox__description--header">Hola, soy el asistente virtual de BanHN ¿En que podria ayudarte?</p>
                 </div>
             </div>
@@ -79,18 +75,15 @@
             </div>
         </div>
         <div class="chatbox__button">
-            <button><img src="./images/chatbox-icon.svg" /></button>
+            <button><img src="{{ url_for('static', filename='images/chatbox-icon.svg') }}" /></button>
         </div>
     </div>
 </div>
 
-  <script src="./script.js"></script>
-<script src="./app.js"></script>
-
-    
-
+    <script>
+        $SCRIPT_ROOT = {{ request.script_root|tojson }};
+    </script>
+    <script type="text/javascript" src="{{ url_for('static', filename='app.js') }}"></script>
 
 </body>
 </html>
-
-
