@@ -35,9 +35,9 @@ all_words = [stem(w) for w in all_words if w not in ignore_words]
 all_words = sorted(set(all_words))
 tags = sorted(set(tags))
 
-print(len(xy), "patterns")
-print(len(tags), "tags:", tags)
-print(len(all_words), "unique stemmed words:", all_words)
+# print(len(xy), "patterns")
+# print(len(tags), "tags:", tags)
+# print(len(all_words), "unique stemmed words:", all_words)
 
 # create training data
 X_train = []
@@ -60,7 +60,7 @@ learning_rate = 0.001
 input_size = len(X_train[0])
 hidden_size = 8
 output_size = len(tags)
-print(input_size, output_size)
+# print(input_size, output_size)
 
 class ChatDataset(Dataset):
 
@@ -126,4 +126,4 @@ data = {
 FILE = "data.pth"
 torch.save(data, FILE)
 
-print(f'training complete. file saved to {FILE}')
+print(f'Entrenamiento completado. archivo guardado como:  {FILE}')

@@ -1,7 +1,5 @@
 {"intents": [
 
-
-
   {
     "tag": "saludo",
       "patterns":["hola", "un saludo", "hi", "saludos", "buen dia","buenas tardes", "buenas noches", "buenas", "hello"],
