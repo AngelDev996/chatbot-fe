@@ -12,13 +12,22 @@
 
 ### Se recomienda la creacion de un entorno (venv) para hacer uso de este chatbot
 
-#### Creacion y activacion de entorno con conda en linux:
+#### Clonar repositorio:
+```
+git clone https://github.com/AngelDev996/chatbot-fe.git
+```
 
+#### Creacion y activacion de entorno con anaconda en Linux:
 ```
 conda create --name proyecto-ts
 conda activate proyecto-ts
 ```
 
+### Instalacion de las dependencias necesarias en el entorno para levantar server e interactuar con el chatbot:
 
+```
+conda install pytorch torchvision torchaudio cudatoolkit=10.2 -c pytorch flask nltk
+
+```
 
 
