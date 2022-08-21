@@ -39,4 +39,5 @@ conda install pytorch torchvision torchaudio cudatoolkit=10.2 -c pytorch flask n
 python app.py
 ```
 
-### Listo! ahora puedes interactuar con el chatbot abriendo en el navegador la direccion: [](http://127.0.0.1:5000/)
+### Listo! ahora puedes interactuar con el chatbot abriendo en el navegador la direccion: `http://127.0.0.1:5000/`
+
