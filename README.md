@@ -30,4 +30,13 @@ conda install pytorch torchvision torchaudio cudatoolkit=10.2 -c pytorch flask n
 
 ```
 
+### Iniciar el chatbot:
+#### Para iniciar el chatbot, entrar a la carpeta chatbot-fe con:
+`cd chatbot-fe`
+#### El archivo `app.py` es la aplicacion la cual inicia el servidor el cual nos permite interactuar con el chatbot
+#### Ejecutar el archivo `app.py` en linux
+```
+python app.py
+```
 
+### Listo! ahora puedes interactuar con el chatbot abriendo en el navegador la direccion: [](http://127.0.0.1:5000/)
