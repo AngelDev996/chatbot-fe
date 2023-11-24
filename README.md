@@ -14,7 +14,7 @@
 
 #### Clonar repositorio:
 ```
-git clone https://github.com/AngelDev996/chatbot-fe.git
+git clone https://github.com/angeldev96/chatbot-fe.git
 ```
 
 #### Creacion y activacion de entorno con anaconda en Linux:
